@@ -1,0 +1,141 @@
+/* ==========================================================================
+   RADO SWITZERLAND - RESPONSIVE STYLESHEET
+   Mobile, Tablet, High-DPI Desktop Adjustments
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+    .luxury-navbar {
+        padding: 1.2rem 2rem;
+    }
+
+    .luxury-navbar.scrolled {
+        padding: 0.9rem 2rem;
+    }
+
+    .footer-top-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+
+    .material-lab-display {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .timeline-card.active {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .timeline-year-display {
+        border-right: none;
+        border-bottom: 1px solid var(--border-subtle);
+        padding-right: 0;
+        padding-bottom: 1rem;
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .luxury-navbar {
+        padding: 1rem 1.5rem;
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 360px;
+        height: 100vh;
+        background: #090a0f;
+        border-left: 1px solid var(--border-subtle);
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 3rem 2rem;
+        gap: 2rem;
+        box-shadow: -15px 0 40px rgba(0,0,0,0.8);
+        transition: right 0.4s var(--ease-luxury);
+        z-index: 999;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .hero-stats-strip {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .form-row-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .material-lab-container {
+        padding: 1.5rem;
+    }
+
+    .modal-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .footer-top-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .timeline-nav-pills {
+        overflow-x: auto;
+        padding-bottom: 1rem;
+        justify-content: flex-start;
+        gap: 0.5rem;
+    }
+
+    .timeline-nav-pills::before {
+        display: none;
+    }
+
+    .timeline-nav-item {
+        white-space: nowrap;
+    }
+
+    .material-metrics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .toast-container {
+        left: 1rem;
+        right: 1rem;
+        bottom: 1rem;
+    }
+
+    .luxury-toast {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-cta-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-cta-group .btn-gold,
+    .hero-cta-group .btn-gold-outline {
+        width: 100%;
+    }
+
+    .sound-label {
+        display: none;
+    }
+}
